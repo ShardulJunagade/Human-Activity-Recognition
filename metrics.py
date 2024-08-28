@@ -97,4 +97,4 @@ def mae(y_hat: pd.Series, y: pd.Series) -> float:
     
     y_hat, y = validate_inputs(y_hat, y)
     mae_value = (y_hat - y).abs().sum() / y.size
-    return mae_value
+    return mae_value    
