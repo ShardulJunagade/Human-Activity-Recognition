@@ -1,0 +1,15 @@
+ipykernel
+ipython
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+watermark
+tsfel
+langchain-groq
+python-dotenv
+fetch_ucirepo
+graphviz
+ucimlrepo
