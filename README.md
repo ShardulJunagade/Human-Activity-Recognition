@@ -1,6 +1,13 @@
-# Assignment 1
+# ES 335 Assignment-1 (Team: ML Boys)
 
-## Total 20 marks (Will be scaled down to 10 marks)
+## Team Members
+
+1. [Shardul Junagade](https://github.com/ShardulJunagade)
+2. [Soham Gaonkar](https://github.com/Soham-Gaonkar)
+3. [Umang Shikarvar](https://github.com/Umang-Shikarvar)
+4. [Sharvari Mirge](https://github.com/msharvari31)
+
+This repository contains the code for the assignment 1 of the course ES 335: Machine Learning Fall-2024 at IIT Gandhinagar taught by Prof. Nipun Batra. In this assignment, we have Human Activity Recognition (HAR), explored zero shot and few shot learning and also implemented decision tree algorithm from scratch.
 
 # Human Activity Recognition (HAR)
 Human Activity Recognition (HAR) refers to the capability of machines to identify various activities performed by the users. The knowledge acquired from these systems/algorithms is integrated into many applications where the associated device uses it to identify actions or gestures and performs predefined tasks in response.
@@ -88,7 +95,7 @@ For this exercise marks will not depend on what numbers you get but on the proce
 
 ## Decision Tree Implementation [6 marks]
 
-1. Complete the decision tree implementation in tree/base.py. The code should be written in Python and not use existing libraries other than the ones shared in class or already imported in the code. Your decision tree should work for four cases: i) discrete features, discrete output; ii) discrete features, real output; iii) real features, discrete output; real features, real output. <u>Your model should accept real inputs only (for discrete inputs, you may convert the attributes into one-hot encoded vectors)</u>. Your decision tree should be able to use InformationGain using Entropy or GiniIndex as the criteria for splitting for discrete output. Your decision tree should be able to use InformationGain using MSE as the criteria for splitting for real output. Your code should also be able to plot/display the decision tree.  **[2.5 marks]**
+1. Complete the decision tree implementation in tree/base.py. The code should be written in Python and not use existing libraries other than the ones shared in class or already imported in the code. Your decision tree should work for four cases: i) discrete features, discrete output; ii) discrete features, real output; iii) real features, discrete output; iv) real features, real output. <u>Your model should accept real inputs only (for discrete inputs, you may convert the attributes into one-hot encoded vectors)</u>. Your decision tree should be able to use InformationGain using Entropy or GiniIndex as the criteria for splitting for discrete output. Your decision tree should be able to use InformationGain using MSE as the criteria for splitting for real output. Your code should also be able to plot/display the decision tree.  **[2.5 marks]**
 
     > You should be editing the following files.
   
@@ -135,10 +142,3 @@ For this exercise marks will not depend on what numbers you get but on the proce
 
 
 You must answer the subjectve questions (visualization,timing analysis, displaying plots) by creating `Asst#<task-name>_<Q#>.md`
-
-
-### **Genral Instructions :**
-1. Show your results in a Jupyter Notebook or an MD file. If you opt for using an MD file, you should also include the code.
-2. You can use the scikit-learn implementation of Decision Tree for the Human Activity Recognition.
-3. This assignment is of 20 marks and will be scaled down to 10 marks.
-
