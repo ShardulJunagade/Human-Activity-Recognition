@@ -24,7 +24,7 @@ Ans : We created the dataset using the code provided. This is the Scatter plot o
 Shape of X: (100, 2)   
 Shape of y: (100,)
 
-![alt text](./image/image-21.png)
+![alt text](./images/image-21.png)
 
 Now we have split the data as 7-% for training and remaining 30% for testing purposes.     
 Shape of X_train: (70, 2)   
@@ -52,7 +52,7 @@ Mean Accuracy : 0.86
 
 Here we have plotted the outer fold accuracies vs depth for each outer fold   
 
-![alt text](./image/image-16.png)
+![alt text](./images/image-16.png)
 
 Now, we calculate the optimal depth for the tree according to each criteria :   
 Criterion: information_gain, Mean Best Depth: 2.0   
@@ -83,13 +83,13 @@ Our implementation, while educational, still provides a relatively reasonable fi
 
 Ans : 
 
-![alt text](./image/image-17.png)
+![alt text](./images/image-17.png)
 
-![alt text](./image/image-18.png)
+![alt text](./images/image-18.png)
 
-![alt text](./image/image-19.png)
+![alt text](./images/image-19.png)
 
-![alt text](./image/image-20.png)
+![alt text](./images/image-20.png)
 
 
 From the above graphs, we can observe that real inputs have much higher prediction times compared to discrete inputs.

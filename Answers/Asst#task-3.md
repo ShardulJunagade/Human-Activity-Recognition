@@ -4,10 +4,10 @@
 Ans :
 
 ZSL : Accuracy: 0.28
-![alt text](./image/image-13.png)
+![alt text](./images/image-13.png)
 
 FSL : Accuracy: 0.72
-![alt text](./image/image-14.png)
+![alt text](./images/image-14.png)
 
 In Zero-Shot Learning, the LLM tends to classify activities predominantly as either walking upstairs or sitting. While it correctly identifies sitting, it struggles to distinguish between other activities.
 
@@ -67,7 +67,7 @@ Ans : For test cases where the true label is "SITTING," the model often predicts
 
 Not including "SITTING" in the few-shot examples may have made the model less familiar with this activity. As a result, it ends up classifying the sample as whatever activity it thinks is closest.
 
-![alt text](./image/image-15.png)
+![alt text](./images/image-15.png)
 
 
 

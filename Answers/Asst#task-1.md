@@ -4,7 +4,7 @@
 Ans : 
 The following 6x3 subplot shows the accelerometer data for the first subject from training data:
 
-![alt text](./image/image.png)
+![alt text](./images/image.png)
 
 We observe that different activities exhibit noticeable differences in their directional waveforms. The range of acceleration and the frequency of peaks vary across the activities.   
 In the plots, walking, walking upstairs, and walking downstairs show multiple peaks in their waveforms, whereas activities like standing, sitting, and laying have much smoother waveforms. This smoother pattern occurs because the person isn’t moving much, so the acceleration remains relatively constant. Therefore, it is possible to distinguish between static and dynamic activities just by observing these graphs. However, differentiating between individual activities within the dynamic or static categories by simply looking at the graphs is challenging.   
@@ -17,10 +17,10 @@ Since decision tree models do not account for the order of data, which is crucia
 Ans :  We have calculated the linear acceleration for each activity using $(\text{acc}_x^2 + \text{acc}_y^2 + \text{acc}_z^2)$ . Below are the plots of linear acceleration for each activity of the first 2 subjects.
 
 Linear acceleration data for subject 1
-![alt text](./image/image-1.png)
+![alt text](./images/image-1.png)
 
 Linear acceleration data for subject 2
-![alt text](./image/image-2.png)
+![alt text](./images/image-2.png)
 
 No, we don't need a machine learning model to differentiate between static activities (laying, sitting, standing) and dynamic activities (walking, walking downstairs, walking upstairs). We can visually distinguish between static and dynamic activities by looking at the minimum and maximum values of linear acceleration in the graphs.   
 The linear acceleration for static activities is almost constant at around 1(1g), while for dynamic activities, it continuously varies with higher peaks. Thus , we can predict the activity using simple conditional statements based on the maximum and minimum acceleration values whether an activity is static or dynamic.
@@ -34,21 +34,21 @@ The linear acceleration for static activities is almost constant at around 1(1g)
 Ans:
 1. Total Acceleration :
 
-   ![alt text](./image/image-3.png)
+   ![alt text](./images/image-3.png)
 
     The scatter plot for PCA on Total Acceleration (computed as ($\sqrt{\text{acc}_x^2 + \text{acc}_y^2 + \text{acc}_z^2}$ ) shows significant overlap among static activities (sitting, standing, laying) around the origin (approximately at (0, 0)).  
     This overlap occurs because static activities have almost constant linear acceleration close to 1 g, leading to minimal variability in the Total Acceleration feature. As a result, PCA projects these nearly constant values to a central point (0,0) in the principal component space, causing clustering. In contrast, dynamic activities (walking, walking upstairs, walking downstairs) exhibit greater variability in acceleration x,y ,z, causing them to be more dispersed across the principal component space. This dispersion reflects their higher variability and different movement patterns.
 
 2. TSFEL Features:
 
-   ![alt text](./image/image-4.png)
+   ![alt text](./images/image-4.png)
 
    The scatter plot for PCA on features extracted using TSFEL shows that static activities (sitting, standing, laying) are more clearly separated.    
    This separation is due to TSFEL extracting a variety of features that capture different aspects of the data, such as mean on each axis, which better differentiate between static activities. Dynamic activities, however, still exhibit some overlap. This is likely because TSFEL features, while more informative than raw Total Acceleration, may not fully capture the nuances between different dynamic activities (walking, walking upstairs, walking downstairs), leading to partial overlap.
 
 3. Original Dataset Features:
 
-  ![alt text](./image/image-5.png)
+  ![alt text](./images/image-5.png)
 
    The scatter plot for PCA on the original dataset features reveals that static and dynamic activities can still be distinguished. However, there is considerable overlap among dynamic activities (walking, walking upstairs, walking downstairs), indicating that their clusters are not as distinct as expected.   
    This overlap might be due to the original features not sufficiently capturing the distinct characteristics of each dynamic activity or because the dynamic activities themselves have similar patterns of acceleration and thus are close to each other in the feature space.
@@ -63,11 +63,11 @@ Overall, TSFEL features seem to provide the most informative representation for 
 Ans: 
 Below is the correlation matrix of features obtained from TSFEL data. It has 30 highly correlated features. 
 
-![alt text](./image/image-6.png)
+![alt text](./images/image-6.png)
 
 Below is the correlation matrix of 561 feautres obtained from the UCI HAR dataset. It has 338 highly correlated features.
 
-![alt text](./image/image-7.png)
+![alt text](./images/image-7.png)
 
 In a correlation matrix:
 

@@ -33,7 +33,7 @@ As we can see on applying featurisation (TSFEL), and preprocessing (PCA), we get
 Ans : Accuracy: 0.17
 We have used different equipments, hence there is difference in orientation. That is why we are getting bad accuracy. 
 
-![alt text](./image/image-22.png)
+![alt text](./images/image-22.png)
 
 ### Q4. Use the Few-Shot prompting method using the data you collected to predict the activities that you performed. Adopt proper processing methods as needed. How did the model perform? 
 Ans : The model had an accuracy of 0.67 out of 1 or 67% overall. Below is the confusion matrix for the model using the data we collected. 
@@ -44,4 +44,4 @@ Limited Number of Examples: The few-shot approach relies on a small set of examp
 
 Limited number of test dataset: Testing on one sample for each activity is not enough , as that one sample may be an outlier.
 
-![alt text](./image/image-23.png)
+![alt text](./images/image-23.png)
