@@ -53,11 +53,26 @@ Ans:
    The scatter plot for PCA on the original dataset features reveals that static and dynamic activities can still be distinguished. However, there is considerable overlap among dynamic activities (walking, walking upstairs, walking downstairs), indicating that their clusters are not as distinct as expected.   
    This overlap might be due to the original features not sufficiently capturing the distinct characteristics of each dynamic activity or because the dynamic activities themselves have similar patterns of acceleration and thus are close to each other in the feature space.
 
-Conclusion:
-Total Acceleration struggles with distinguishing among activities,static activities are collapsed to a point ,wheareas dynamic activities are dispersed with no clear pattern.   
-TSFEL Features offer better differentiation between static and dynamic activities, provides clear differentitation between sitting,standing and laying. Shows some separation among dynamic activities, though overlap remains.   
-Original Dataset Features also helps in distinguishing static from dynamic activities but with significant overlap among dynamic classes.   
-Overall, TSFEL features seem to provide the most informative representation for visualizing the data, as they offer a clearer boundary between static and dynamic activities and show some separation among dynamic activities.
+4. 
+   1. **Total Acceleration:**
+      - The scatter plot for PCA on Total Acceleration (computed as $(\sqrt{acc_x^2 + acc_y^2 + acc_z^2 })$) shows significant overlap among static activities (sitting, standing, laying) around the origin (approximately at (0, 0)).
+      - This overlap occurs because static activities have almost constant linear acceleration close to 1 g, leading to minimal variability in the Total Acceleration feature. As a result, PCA projects these nearly constant values to a central point (0,0) in the principal component space, causing clustering. In contrast, dynamic activities (walking, walking upstairs, walking downstairs) exhibit greater variability in acceleration x,y ,z, causing them to be more dispersed across the principal component space. This dispersion reflects their higher variability and different movement patterns.
+
+   2. **TSFEL Features:**
+      - The scatter plot for PCA on features extracted using TSFEL shows that static activities (sitting, standing, laying) are more clearly separated.
+      - This separation is due to TSFEL extracting a variety of features that capture different aspects of the data, such as mean on each axis,  which better differentiate between static activities. Dynamic activities, however, still exhibit some overlap. This is likely because TSFEL features, while more informative than raw Total Acceleration, may not fully capture the nuances between different dynamic activities (walking, walking upstairs, walking downstairs), leading to partial overlap.
+
+   3. **Original Dataset Features:**
+      - The scatter plot for PCA on the original dataset features reveals that static and dynamic activities can still be distinguished. However, there is considerable overlap among dynamic activities (walking, walking upstairs, walking downstairs), indicating that their clusters are not as distinct as expected.
+      - This overlap might be due to the original features not sufficiently capturing the distinct characteristics of each dynamic activity or because the dynamic activities themselves have similar patterns of acceleration and thus are close to each other in the feature space.
+
+### Conclusion
+- **Total Acceleration** struggles with distinguishing among  activities,static activities are collapsed to a point ,wheareas dynamic activities are dispersed with no clear pattern.
+- **TSFEL Features** offer better differentiation between static and dynamic activities ,provides clear differentitation between sitting,standing and laying .Shows some separation among dynamic activities, though overlap remains.
+- **Original Dataset Features** also helps in distinguishing static from dynamic activities but with significant overlap among dynamic classes.
+
+Overall, **TSFEL features** seem to provide the most informative representation for visualizing the data, as they offer a clearer boundary between static and dynamic activities and show some separation among dynamic activities.
+
 
 ### Q4. Calculate the correlation matrix of the features obtained by TSFEL and provided in the dataset. Identify the features that are highly correlated with each other. Are there any redundant features?
 Ans: 
