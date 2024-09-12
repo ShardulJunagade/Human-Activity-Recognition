@@ -1,13 +1,22 @@
-# ES 335 Assignment-1 (Team: ML Boys)
+# Human Activity Recognition (HAR)
 
-## Team Members
+Human Activity Recognition (HAR) refers to the capability of machines to identify various activities performed by the users. The knowledge acquired from these systems/algorithms is integrated into many applications where the associated device uses it to identify actions or gestures and performs predefined tasks in response.
 
-1. [Shardul Junagade](https://github.com/ShardulJunagade)
-2. [Soham Gaonkar](https://github.com/Soham-Gaonkar)
-3. [Umang Shikarvar](https://github.com/Umang-Shikarvar)
-4. [Sharvari Mirge](https://github.com/msharvari31)
+## Project Overview
+This project focuses on Human Activity Recognition (HAR) using machine learning techniques, specifically decision trees. The primary dataset used is the UCI-HAR dataset, which consists of time-series data from 30 subjects performing six different activities.
 
-This repository contains the code for the assignment 1 of the course ES 335: Machine Learning Fall-2024 at IIT Gandhinagar taught by Prof. Nipun Batra. In this assignment, we have done Human Activity Recognition (HAR) using decision trees, implemented our own decision tree algorithm from scratch and also explored zero-shot and few-shot learning.
+### Key Highlights:
+- **Data Analysis & Feature Extraction:** Conducted an in-depth data analysis of the UCI-HAR dataset.
+- **Feature Extraction using TSFEL:** Utilized the TSFEL library for comprehensive feature extraction and applied Principal Component Analysis (PCA)
+to reduce data dimensionality.
+- **Model Training:** Trained a Decision Tree model on the featurized dataset and evaluated its performance.
+- **Custom Data Collection:** Collected g-force acceleration data from a smartphone using the Physics Toolbox Suite app and tested the trained model on this custom dataset, achieving 66% accuracy and 67% precision.
+- **Custom Decision Tree Implementation:** Implemented a Decision Tree algorithm from scratch, supporting both real and discrete input-output combinations. This custom implementation achieved comparable performance to Scikit-learn’s Decision Tree classifier.
+- **Visualization:** Integrated Graphviz to generate clear visual representations of the decision tree structure for better interpretability.
+
+
+## Dataset
+We classify human activities based on accelerometer data using a publicly available dataset called [UCI-HAR](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8567275). The dataset can be downloaded [here](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones). A video of the authors collecting participant's accelerometer data is also available [here](http://www.youtube.com/watch?v=XOEN9W05_4A).
 
 ## Installation and Setup
 1. Clone the repository
@@ -37,11 +46,7 @@ This repository contains the code for the assignment 1 of the course ES 335: Mac
     pip install -r requirements.txt
     ```
 
-# Human Activity Recognition (HAR)
-Human Activity Recognition (HAR) refers to the capability of machines to identify various activities performed by the users. The knowledge acquired from these systems/algorithms is integrated into many applications where the associated device uses it to identify actions or gestures and performs predefined tasks in response.
 
-## Dataset
-We classify human activities based on accelerometer data using a publicly available dataset called [UCI-HAR](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8567275). The dataset can be downloaded [here](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones). A video of the authors collecting participant's accelerometer data is also available [here](http://www.youtube.com/watch?v=XOEN9W05_4A).
 
 ## Task 1 : Exploratory Data Analysis (EDA) [3 marks]
 
